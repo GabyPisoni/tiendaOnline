@@ -33,3 +33,12 @@ Entrar en el directorio por medio de la consola de comando con cd Front-Tienda-o
 Luego ingresar npm start
 ##### `npm start`
 Entrar a http://localhost:3000
+
+## Construido con 🛠️
+
+_Menciona las herramientas que utilizaste para crear tu proyecto_
+
+* [material-ui](https://material-ui.com/) - El framework web usado para construir apartir de componentes.
+* [React](https://es.reactjs.org/) - Libreria de javascript para construir el proyecto
+* [AXIOS](https://www.npmjs.com/package/axios/) - Usado para pedir los datos al servidor remoto (Backend)
+
