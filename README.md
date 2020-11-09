@@ -6,15 +6,15 @@ Props con destructuracion en js
 Componentes (Se utilizo Material Ui y estilos en css por separado tambien)
 
 
-##Requisitos 
+###Requisitos 
 Tener Node js instalado y React tambien.
 
 
-##Instrucciones
+####Instrucciones
 
 Entrar en el directorio por medio de la consola de comando con cd Front-Tienda-online y ingresar npm install para instalar todas las dependencias.
 Luego ingresar npm start
-### `npm start`
+##### `npm start`
 Entrar a http://localhost:3000
 
 
