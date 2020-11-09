@@ -1,7 +1,7 @@
 # Parte Front del Proyecto Tienda de peliculas
 Tienda online de peliculas para comprar y eliminar , incluido buscador y validaciones en el mismo de regex.
 Este proyecto fue hecho con React conceptos aplicados :
-,Hooks State y Hooks Effects,
+Hooks State y Hooks Effects,
 Props con destructuracion en js, 
 Componentes (Se utilizo Material Ui y estilos en css por separado tambien),
 Coneccion por medio de Axios.
