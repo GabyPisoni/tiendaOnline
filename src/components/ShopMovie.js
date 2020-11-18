@@ -18,17 +18,14 @@ function ShowMovie() {
   const [searchResults, setSearchResults] = React.useState([]);
   const [trolley, setTrolley] = useState([]);
   const [charactersTrue, setCharactersTrue] = useState(true);
-  const [load, setLoad] = useState(false);
   let date = new Date().getFullYear();
 
-  useEffect(() => {
-    axios
+   useEffect(() => {
+     axios
       .get("http://localhost:3002/")
       .then((res) => {
         setMovies(res.data);
-        console.log(res.data);
         setSearchResults(res.data);
-        setLoad(false);
       })
       .catch((err) => {
         console.log(err);
@@ -40,11 +37,9 @@ function ShowMovie() {
       person.Titulo.toLowerCase().includes(searchTerm.toLowerCase())
     );
     setSearchResults(results);
+       // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchTerm]);
 
-  if (load) {
-    return <p>Cargando Peliculas....</p>;
-  }
 
   return (
     <Fragment>

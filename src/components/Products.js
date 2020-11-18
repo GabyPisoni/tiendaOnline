@@ -32,10 +32,10 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     textAlign: "left",
-    padding: theme.spacing.unit * 3,
+    padding: 20,
   },
   divider: {
-    margin: `${theme.spacing.unit * 3}px 0`,
+    margin: 12,
   },
   heading: {
     fontWeight: "bold",
@@ -69,7 +69,7 @@ const Movies = ({ producto, trolley, setTrolley, movies }) => {
   const handleDelete = (id) => {
     let valor = id;
     let i = 0;
-    while (i <= 7 && trolley[i].id != valor) {
+    while (i <= 7 && trolley[i].id !== valor) {
       i = i + 1;
     }
     const indice = i;
@@ -91,7 +91,6 @@ const Movies = ({ producto, trolley, setTrolley, movies }) => {
             <Typography className={classes.title} variant={"h4"}>
               {Titulo}
             </Typography>
-            <Typography className={"MuiTypography--subheading"}>
               <p className={classes.fuente}>
                 Fecha de estreno : {Fecha_de_Estreno}
               </p>
@@ -100,7 +99,7 @@ const Movies = ({ producto, trolley, setTrolley, movies }) => {
               </p>
               <p className={classes.fuente}>Compañia : {Compañia} </p>
               {Precio}$
-            </Typography>
+        
             <Divider className={classes.divider} light />
 
             {movies ? (
